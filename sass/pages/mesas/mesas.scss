@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'Abel';
+    src: url('../fonts/Abel-Regular.ttf');
+}
+
+body {
+    margin: 1rem;
+}
+
+header {
+
+    .title-container {
+        background-color: hsl(200, 9%, 87%);
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.tpv {
+    margin: auto;
+
+    .ticket {
+
+        .ticket-title {
+            margin: 2rem 0;
+    
+            h3 {
+                font-size: 1.8rem;
+                font-weight: lighter;
+                margin: auto;
+                width:fit-content;
+                opacity: .7;
+            }
+        }
+    
+        .ticket-textarea {
+             
+            textarea {
+                border-radius: .4rem;
+                border-color: hsl(0, 0%, 95%);
+                color: #000;
+                height: 3rem;
+                width: 100%;
+                overflow-y: scroll;
+                resize: none;
+                scrollbar-width: none;
+            }
+        }
+    
+        .ticket-displays {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: .2rem;
+    
+            .display {
+                background-color: hsl(208, 7%, 46%);
+                color: #fff;
+                padding: .4rem;
+                margin: 1rem 0;
+            }
+
+            :nth-child(2) {
+                margin-left: .1rem;
+            }
+
+            :nth-child(3) {
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    
+        .ticket-buttons {
+            display: flex;
+            justify-content: space-between;
+    
+            button {
+                background-color: hsl(354, 70%, 54%);
+                border: none;
+                border-radius: 0.5rem;
+                color: #fff;
+                cursor: pointer;
+                font-size: 1.5rem;
+                font-weight: bold;
+                padding: 0.5rem 1.4rem;
+                transition: all 0.3s ease-in-out;
+                width: 100%;
+    
+                &:hover {
+                    background-color: hsl(354, 70%, 60%);
+                }
+            }
+    
+            :nth-child(2n) {
+                background-color: hsl(152, 69%, 31%);
+                margin-left: 1rem;
+
+                &:hover {
+                    background-color: hsl(152, 69%, 37%);
+                }
+            }
+        }
+    }
+
+    .tables {
+
+        .tables-title {
+            margin: 2rem 0;
+
+            h3 {
+                margin: auto;
+                width: fit-content;
+                font-size: 1.8rem;
+                font-weight: lighter;
+                opacity: .7;
+            }
+        }
+
+        .tables-container {
+            display: flex;
+            flex-wrap: wrap;
+
+            .table {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: radial-gradient(circle, hsl(152, 69%, 30%), hsl(120, 100%, 14%));
+                padding: 1.2rem;
+                margin: 0 0 1rem 1rem;
+                height: 10rem;
+                width: 16rem;
+
+                span {
+                    font-size: 3rem;
+                    font-weight: bold;
+                    color: hsl(0, 0%, 100%);
+                    background: transparent;
+                    opacity: .7;
+                }
+            }
+            
+            :nth-child(1) {
+                background: radial-gradient(hsl(354, 70%, 56%), hsl(0, 100%, 27%));
+
+            }
+
+            :nth-child(2) {
+                background: radial-gradient(hsl(195, 100%, 30%), hsl(240, 100%, 27%));
+            }
+        }
+    }
+}

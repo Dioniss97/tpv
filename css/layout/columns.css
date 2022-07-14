@@ -1,0 +1,13 @@
+.desktop-two-columns-aside {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-two-columns-aside > .column-aside {
+    width: 20%;
+}
+
+.desktop-two-columns-aside > .column-main {
+    width: 75%;
+}
