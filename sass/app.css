@@ -504,7 +504,7 @@ header .title-container h1 {
   border-radius: .4rem;
   border-color: #f2f2f2;
   color: #000;
-  height: 4rem;
+  height: 3rem;
   width: 100%;
   overflow-y: scroll;
   resize: none;
@@ -643,6 +643,24 @@ header .title-container h1 {
 
 .ticket-products .products-list {
   border: 0.1rem solid #cccccc;
+  border-radius: .2rem;
+  overflow-y: scroll;
+  scroll-bar: none;
+}
+
+.ticket-products .products-list .listed-product:first-child {
+  border-top: none;
+}
+
+.ticket-products .products-list .listed-product {
+  border-top: 0.1rem solid #cccccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .4rem;
 }
 
 .ticket-products .products-list .listed-product .delete-button {
@@ -656,6 +674,10 @@ header .title-container h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.ticket-products .products-list .listed-product .delete-button svg {
+  width: 1.6rem;
 }
 
 .ticket-products .products-list .listed-product .product-img {
@@ -672,7 +694,11 @@ header .title-container h1 {
 }
 
 .ticket-products .products-list .listed-product .product-img img {
-  width: 70%;
+  width: 100%;
+}
+
+.ticket-products .products-list .listed-product .product-info {
+  width: 50%;
 }
 
 .ticket-products .products-list .listed-product .product-info .product-category span {
@@ -696,9 +722,7 @@ header .title-container h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 30%;
 }
 
 .ticket-products .products-list .listed-product .product-price span {
@@ -754,6 +778,7 @@ header .title-container h1 {
   border: solid .1rem transparent;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
   margin: 1rem 1rem 0 0;
   padding: .2rem;
 }
