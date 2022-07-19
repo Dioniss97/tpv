@@ -9,4 +9,9 @@
 // pages
 @import "pages/mesas/mesas";
 @import "pages/categorias/categorias";
-@import "pages/produtos/produtos";
+@import "pages/productos/productos";
+@import "pages/ventas/ventas";
+
+// components
+@import "components/products-list";
+@import "components/ticket-display";

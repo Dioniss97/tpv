@@ -1,0 +1,172 @@
+.sells .sells-title {
+  margin-bottom: 1rem;
+}
+
+.sells .sells-title h3 {
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.8rem;
+  font-weight: lighter;
+  opacity: .7;
+}
+
+.sells .sells-filters .filter {
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sells .sells-filters .filter .filter-field input, .sells .sells-filters .filter .filter-field select {
+  width: 7rem;
+}
+
+.sells .sells-filters button {
+  background-color: #0d6dfd;
+  border-radius: .2rem;
+  color: white;
+  width: 100%;
+  height: 2rem;
+}
+
+.sells .sells-filters button:hover {
+  background-color: #2b7ffd;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sells .sells-list {
+  margin: 1rem 0 1rem 0;
+  border-radius: .2rem;
+  overflow-y: scroll;
+  scroll-bar: none;
+}
+
+.sells .sells-list .sell:first-child {
+  background-color: #0d6dfd;
+  border-top: none;
+  color: white;
+}
+
+.sells .sells-list .sell {
+  border-top: 0.1rem solid #cccccc;
+}
+
+.sells .sells-list .sell .flexed-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.sells .sells-list .sell .flexed-elements .ticket-number {
+  margin: .4rem;
+}
+
+.sells .sells-list .sell .flexed-elements .hour {
+  margin: .4rem;
+  font-size: .8rem;
+}
+
+.sells .sells-list .sell .flexed-elements .hour span {
+  font-size: .8rem;
+}
+
+.sells .sells-list .sell .flexed-elements .table-number {
+  margin: .4rem;
+  font-size: .8rem;
+}
+
+.sells .sells-list .sell .flexed-elements .table-number span {
+  font-size: .7rem;
+}
+
+.sells .sells-list .sell .price {
+  margin: 1rem;
+}
+
+.sells .sells-info {
+  margin: 1rem 0 1rem 0;
+  color: white;
+}
+
+.sells .sells-info .info-titles {
+  padding: .4rem;
+}
+
+.sells .sells-info .info-titles, .sells .sells-info .info-amounts {
+  background-color: #6d767e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  height: 1.4rem;
+}
+
+.sells .sells-info .info-titles .average-amount, .sells .sells-info .info-amounts .average-amount {
+  width: 50%;
+}
+
+.sells .sells-info .info-titles .total-amount, .sells .sells-info .info-amounts .total-amount {
+  border-right: 0.1rem solid white;
+  width: 50%;
+}
+
+.sells .sell-panel {
+  border: solid 0.1rem black;
+  border-radius: .2rem;
+}
+
+.sells .sell-panel .sell-header {
+  border-bottom: 0.1rem solid black;
+  background-color: #f7f7f7;
+  height: 3rem;
+}
+
+.sells .sell-panel .sell-container .container-title {
+  font-size: 1.2rem;
+  font-weight: light;
+  margin: .4rem 0 1rem .4rem;
+}
+
+.sells .sell-panel .sell-container .table-number, .sells .sell-panel .sell-container .payment, .sells .sell-panel .sell-container .total-base, .sells .sell-panel .sell-container .total-iva, .sells .sell-panel .sell-container .total {
+  margin: .4rem;
+}
+
+.sells .sell-panel .sell-container .table-number span, .sells .sell-panel .sell-container .payment span, .sells .sell-panel .sell-container .total-base span, .sells .sell-panel .sell-container .total-iva span, .sells .sell-panel .sell-container .total span {
+  font-weight: bold;
+}
+
+.sells .products-table {
+  margin-top: 2rem;
+}
+
+.sells .products-table table {
+  width: 100%;
+}
+
+.sells .products-table table tr th {
+  border-bottom: 1px solid black;
+  border-spacing: 1rem;
+  width: 32%;
+}
+
+.sells .products-table table tr td {
+  text-align: center;
+}
+
+.sells .products-table table tr td img {
+  width: 40%;
+  margin: 1rem;
+}
+/*# sourceMappingURL=ventas.css.map */

@@ -380,10 +380,10 @@ ol, ul {
   width: 100%;
 }
 .desktop-two-columns-aside > .column-aside {
-  width: 20%;
+  width: 25%;
 }
 .desktop-two-columns-aside > .column-main {
-  width: 75%;
+  width: 70%;
 }
 
 .desktop-one-column {
@@ -436,24 +436,7 @@ header .title-container h1 {
   overflow-y: scroll;
   resize: none;
   scrollbar-width: none;
-}
-.tpv .ticket .ticket-displays {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 0.2rem;
-}
-.tpv .ticket .ticket-displays .display {
-  background-color: hsl(208deg, 7%, 46%);
-  color: #fff;
-  padding: 0.4rem;
-  margin: 1rem 0;
-}
-.tpv .ticket .ticket-displays :nth-child(2) {
-  margin-left: 0.1rem;
-}
-.tpv .ticket .ticket-displays :nth-child(3) {
-  background-color: #000;
-  color: #fff;
+  text-align: center;
 }
 .tpv .ticket .ticket-buttons {
   display: flex;
@@ -502,8 +485,8 @@ header .title-container h1 {
   background: radial-gradient(circle, hsl(152deg, 69%, 30%), hsl(120deg, 100%, 14%));
   padding: 1.2rem;
   margin: 0 0 1rem 1rem;
-  height: 10rem;
-  width: 16rem;
+  height: 8rem;
+  width: 14rem;
 }
 .tpv .tables .tables-container .table span {
   font-size: 3rem;
@@ -525,61 +508,6 @@ header .title-container h1 {
   justify-content: space-between;
   margin-top: 20px;
 }
-.ticket-products .products-list {
-  border: 0.1rem solid hsl(0deg, 0%, 80%);
-  border-radius: 0.2rem;
-  overflow-y: scroll;
-  scroll-bar: none;
-}
-.ticket-products .products-list .listed-product:first-child {
-  border-top: none;
-}
-.ticket-products .products-list .listed-product {
-  border-top: 0.1rem solid hsl(0deg, 0%, 80%);
-  display: flex;
-  justify-content: space-between;
-  padding: 0.4rem;
-}
-.ticket-products .products-list .listed-product .delete-button {
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-}
-.ticket-products .products-list .listed-product .delete-button svg {
-  width: 1.6rem;
-}
-.ticket-products .products-list .listed-product .product-img {
-  width: 36%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.ticket-products .products-list .listed-product .product-img img {
-  width: 100%;
-}
-.ticket-products .products-list .listed-product .product-info {
-  width: 50%;
-}
-.ticket-products .products-list .listed-product .product-info .product-category span {
-  font-size: 1rem;
-  font-weight: lighter;
-  font-style: italic;
-}
-.ticket-products .products-list .listed-product .product-info .product-name {
-  font-size: 1rem;
-  font-weight: bold;
-}
-.ticket-products .products-list .listed-product .product-price {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-}
-.ticket-products .products-list .listed-product .product-price span {
-  font-size: 1rem;
-  font-weight: lighter;
-}
 
 .categories-main-content .categories-title {
   margin: 2rem 0;
@@ -596,11 +524,19 @@ header .title-container h1 {
   justify-content: flex-start;
 }
 .categories-main-content .categories .categories-buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: hsl(0deg, 0%, 60%);
   color: white;
   cursor: pointer;
   margin: 0 0.5rem 1rem 0;
   padding: 1rem;
+  height: 3rem;
+}
+.categories-main-content .categories .categories-buttons button svg {
+  margin-right: 1rem;
+  width: 1.6rem;
 }
 .categories-main-content .categories .categories-buttons :hover {
   opacity: 0.6;
@@ -609,32 +545,271 @@ header .title-container h1 {
 }
 .categories-main-content .categories .categories-container {
   display: flex;
+  flex-wrap: wrap;
 }
 .categories-main-content .categories .categories-container .category {
-  border: solid 0.1rem transparent;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   cursor: pointer;
   margin: 1rem 1rem 0 0;
-  padding: 0.2rem;
+}
+.categories-main-content .categories .categories-container .category .category-title {
+  text-align: center;
+}
+.categories-main-content .categories .categories-container .category .category-img {
+  border: solid 0.1rem transparent;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  width: fit-content;
+}
+.categories-main-content .categories .categories-container .category .category-img:hover {
+  border: solid 0.1rem hsl(0deg, 0%, 60%);
 }
 .categories-main-content .categories .categories-container .category .category-img img {
-  width: 20rem;
+  width: 100%;
+  height: 100%;
+}
+
+.element-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+.element-container .element {
+  border: solid 0.1rem transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 1rem 1rem 0;
+}
+.element-container .element:hover {
+  border: solid 0.1rem hsl(0deg, 0%, 60%);
+}
+.element-container .element .element-img {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  width: 16rem;
   height: 10rem;
-  margin: 0 0 1rem 0;
 }
-.categories-main-content .categories .categories-container .category .categories-title {
-  margin: 2rem 0;
+.element-container .element .element-img img {
+  width: 100%;
+  height: 100%;
 }
-.categories-main-content .categories .categories-container .category .categories-title h3 {
+.element-container .element .element-title {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  opacity: 0.7;
+  margin: 0.5rem 0;
+}
+
+.sells .sells-title {
+  margin-bottom: 1rem;
+}
+.sells .sells-title h3 {
   margin: auto;
   width: fit-content;
   font-size: 1.8rem;
   font-weight: lighter;
   opacity: 0.7;
 }
-.categories-main-content .categories .categories-container .category:hover {
-  border: solid 0.1rem hsl(0deg, 0%, 60%);
-  border-spacing: 0.2rem;
+.sells .sells-filters .filter {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.sells .sells-filters .filter .filter-field input, .sells .sells-filters .filter .filter-field select {
+  width: 7rem;
+}
+.sells .sells-filters button {
+  background-color: hsl(216deg, 98%, 52%);
+  border-radius: 0.2rem;
+  color: white;
+  width: 100%;
+  height: 2rem;
+}
+.sells .sells-filters button:hover {
+  background-color: hsl(216deg, 98%, 58%);
+  transition: 0.4s;
+}
+.sells .sells-list {
+  margin: 1rem 0 1rem 0;
+  border-radius: 0.2rem;
+  overflow-y: scroll;
+  scroll-bar: none;
+}
+.sells .sells-list .sell:first-child {
+  background-color: hsl(216deg, 98%, 52%);
+  border-top: none;
+  color: hsl(0deg, 0%, 100%);
+}
+.sells .sells-list .sell {
+  border-top: 0.1rem solid hsl(0deg, 0%, 80%);
+}
+.sells .sells-list .sell .flexed-elements {
+  display: flex;
+  justify-content: space-evenly;
+}
+.sells .sells-list .sell .flexed-elements .ticket-number {
+  margin: 0.4rem;
+}
+.sells .sells-list .sell .flexed-elements .hour {
+  margin: 0.4rem;
+  font-size: 0.8rem;
+}
+.sells .sells-list .sell .flexed-elements .hour span {
+  font-size: 0.8rem;
+}
+.sells .sells-list .sell .flexed-elements .table-number {
+  margin: 0.4rem;
+  font-size: 0.8rem;
+}
+.sells .sells-list .sell .flexed-elements .table-number span {
+  font-size: 0.7rem;
+}
+.sells .sells-list .sell .price {
+  margin: 1rem;
+}
+.sells .sells-info {
+  margin: 1rem 0 1rem 0;
+  color: white;
+}
+.sells .sells-info .info-titles {
+  padding: 0.4rem;
+}
+.sells .sells-info .info-titles, .sells .sells-info .info-amounts {
+  background-color: hsl(208deg, 7%, 46%);
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 1.4rem;
+}
+.sells .sells-info .info-titles .average-amount, .sells .sells-info .info-amounts .average-amount {
+  width: 50%;
+}
+.sells .sells-info .info-titles .total-amount, .sells .sells-info .info-amounts .total-amount {
+  border-right: 0.1rem solid hsl(0deg, 0%, 100%);
+  width: 50%;
+}
+.sells .sell-panel {
+  border: solid 0.1rem hsl(0deg, 0%, 0%);
+  border-radius: 0.2rem;
+}
+.sells .sell-panel .sell-header {
+  border-bottom: 0.1rem solid hsl(0deg, 0%, 0%);
+  background-color: hsl(0deg, 0%, 97%);
+  height: 3rem;
+}
+.sells .sell-panel .sell-container .container-title {
+  font-size: 1.2rem;
+  font-weight: light;
+  margin: 0.4rem 0 1rem 0.4rem;
+}
+.sells .sell-panel .sell-container .table-number, .sells .sell-panel .sell-container .payment, .sells .sell-panel .sell-container .total-base, .sells .sell-panel .sell-container .total-iva, .sells .sell-panel .sell-container .total {
+  margin: 0.4rem;
+}
+.sells .sell-panel .sell-container .table-number span, .sells .sell-panel .sell-container .payment span, .sells .sell-panel .sell-container .total-base span, .sells .sell-panel .sell-container .total-iva span, .sells .sell-panel .sell-container .total span {
+  font-weight: bold;
+}
+.sells .products-table {
+  margin-top: 2rem;
+}
+.sells .products-table table {
+  width: 100%;
+}
+.sells .products-table table tr th {
+  border-bottom: 1px solid black;
+  border-spacing: 1rem;
+  width: 32%;
+}
+.sells .products-table table tr td {
+  text-align: center;
+}
+.sells .products-table table tr td img {
+  width: 40%;
+  margin: 1rem;
+}
+
+.products-list {
+  border: 0.1rem solid hsl(0deg, 0%, 80%);
+  border-radius: 0.2rem;
+  overflow-y: scroll;
+  scroll-bar: none;
+  width: 100%;
+}
+.products-list .listed-product:first-child {
+  border-top: none;
+}
+.products-list .listed-product {
+  border-top: 0.1rem solid hsl(0deg, 0%, 80%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem;
+}
+.products-list .listed-product .delete-button {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+.products-list .listed-product .delete-button svg {
+  width: 1.6rem;
+}
+.products-list .listed-product .product-img {
+  width: 36%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.products-list .listed-product .product-img img {
+  width: 100%;
+}
+.products-list .listed-product .product-info {
+  width: 50%;
+}
+.products-list .listed-product .product-info .product-category span {
+  font-size: 1rem;
+  font-weight: lighter;
+  font-style: italic;
+}
+.products-list .listed-product .product-info .product-name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.products-list .listed-product .product-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.products-list .listed-product .product-price span {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.ticket-displays {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.2rem;
+  width: 100%;
+}
+.ticket-displays .display {
+  background-color: hsl(208deg, 7%, 46%);
+  color: #fff;
+  padding: 0.4rem;
+  margin: 1rem 0;
+  width: 30%;
+}
+.ticket-displays .display span {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+.ticket-displays :nth-child(2) {
+  margin-left: 0.1rem;
+  width: 30%;
+}
+.ticket-displays :nth-child(3) {
+  background-color: #000;
+  color: #fff;
+  width: 30%;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

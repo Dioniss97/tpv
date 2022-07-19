@@ -1,0 +1,90 @@
+.products-list {
+  border: 0.1rem solid #cccccc;
+  border-radius: .2rem;
+  overflow-y: scroll;
+  scroll-bar: none;
+  width: 100%;
+}
+
+.products-list .listed-product:first-child {
+  border-top: none;
+}
+
+.products-list .listed-product {
+  border-top: 0.1rem solid #cccccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .4rem;
+}
+
+.products-list .listed-product .delete-button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.products-list .listed-product .delete-button svg {
+  width: 1.6rem;
+}
+
+.products-list .listed-product .product-img {
+  width: 36%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products-list .listed-product .product-img img {
+  width: 100%;
+}
+
+.products-list .listed-product .product-info {
+  width: 50%;
+}
+
+.products-list .listed-product .product-info .product-category span {
+  font-size: 1rem;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.products-list .listed-product .product-info .product-name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.products-list .listed-product .product-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+}
+
+.products-list .listed-product .product-price span {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+/*# sourceMappingURL=products-list.css.map */

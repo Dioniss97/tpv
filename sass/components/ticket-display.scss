@@ -1,0 +1,31 @@
+.ticket-displays {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .2rem;
+    width: 100%;
+
+    .display {
+        background-color: hsl(208, 7%, 46%);
+        color: #fff;
+        padding: .4rem;
+        margin: 1rem 0;
+        width: 30%;
+        
+        span {
+            display: block;
+            text-align: center;
+            margin: auto;
+        }
+    }
+
+    :nth-child(2) {
+        margin-left: .1rem;
+        width: 30%;
+    }
+
+    :nth-child(3) {
+        background-color: #000;
+        color: #fff;
+        width: 30%;
+    }
+}

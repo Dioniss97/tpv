@@ -1,0 +1,37 @@
+.ticket-displays {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: .2rem;
+  width: 100%;
+}
+
+.ticket-displays .display {
+  background-color: #6d767e;
+  color: #fff;
+  padding: .4rem;
+  margin: 1rem 0;
+  width: 30%;
+}
+
+.ticket-displays .display span {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.ticket-displays :nth-child(2) {
+  margin-left: .1rem;
+  width: 30%;
+}
+
+.ticket-displays :nth-child(3) {
+  background-color: #000;
+  color: #fff;
+  width: 30%;
+}
+/*# sourceMappingURL=ticket-display.css.map */

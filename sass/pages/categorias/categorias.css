@@ -1,0 +1,100 @@
+.ticket-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.categories-main-content .categories-title {
+  margin: 2rem 0;
+}
+
+.categories-main-content .categories-title h3 {
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.8rem;
+  font-weight: lighter;
+  opacity: .7;
+}
+
+.categories-main-content .categories .categories-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.categories-main-content .categories .categories-buttons button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #999999;
+  color: white;
+  cursor: pointer;
+  margin: 0 .5rem 1rem 0;
+  padding: 1rem;
+  height: 3rem;
+}
+
+.categories-main-content .categories .categories-buttons button svg {
+  margin-right: 1rem;
+  width: 1.6rem;
+}
+
+.categories-main-content .categories .categories-buttons :hover {
+  opacity: .6;
+  color: #000;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.categories-main-content .categories .categories-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.categories-main-content .categories .categories-container .category {
+  cursor: pointer;
+  margin: 1rem 1rem 0 0;
+}
+
+.categories-main-content .categories .categories-container .category .category-title {
+  text-align: center;
+}
+
+.categories-main-content .categories .categories-container .category .category-img {
+  border: solid .1rem transparent;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.categories-main-content .categories .categories-container .category .category-img:hover {
+  border: solid 0.1rem #999999;
+}
+
+.categories-main-content .categories .categories-container .category .category-img img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=categorias.css.map */

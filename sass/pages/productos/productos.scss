@@ -1,23 +1,37 @@
 .element-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    max-width: 100%;
 
     .element {
+        border: solid .1rem transparent;
+        cursor: pointer;
         display: flex;
-        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 1rem 1rem 0;
 
-        .element-image {
-            display: flex;
-            border: solid .1rem transparent;
+        &:hover {
+            border: solid .1rem hsl(0, 0%, 60%);
+        }
+
+        .element-img {
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-            cursor: pointer;
-            margin: 1rem 1rem 0 0;
-            padding: .2rem;
+            width: 16rem;
+            height: 10rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .element-title {
+            font-size: 1.2rem;
+            font-weight: lighter;
+            opacity: .7;
+            margin: 0.5rem 0;
         }
     }
-}
-.tpv {
-    background-color: black;
 }
