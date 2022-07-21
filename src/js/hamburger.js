@@ -1,7 +1,7 @@
 export let renderHamburger = () => {
     
     let menu = document.querySelector(".header-menu");
-    let hamburger = document.querySelector(".header-hamburger");
+    let hamburger = document.querySelector(".hamburger");
 
     console.log('hola');
 
