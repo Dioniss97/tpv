@@ -5,7 +5,7 @@ export let renderHamburger = () => {
 
     console.log('hola');
 
-    // Problemas de clases
+    // Problemas de clases, no es la burger que toca. Facil arreglo
 
     if(hamburger) {
 
