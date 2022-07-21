@@ -1,0 +1,108 @@
+.header-hamburger {
+  /*
+       * And let's slide it in from the left
+       */
+}
+
+.header-hamburger .hamburger {
+  display: block;
+  position: relative;
+  z-index: 4;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+}
+
+.header-hamburger .hamburger span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cccccc;
+  border-radius: 3px;
+  z-index: 4;
+  -webkit-transform-origin: 4px 0px;
+          transform-origin: 4px 0px;
+  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.header-hamburger .hamburger span:first-child {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.header-hamburger .hamburger span:nth-last-child(2) {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+.header-hamburger .hamburger.active span {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(-18px, -20px);
+          transform: rotate(45deg) translate(-18px, -20px);
+  background: .232323;
+}
+
+.header-hamburger .hamburger.active span:nth-last-child(3) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.header-hamburger .hamburger.active span:nth-last-child(2) {
+  -webkit-transform: rotate(-45deg) translate(0, 2px);
+          transform: rotate(-45deg) translate(0, 2px);
+}
+
+.header-hamburger .hamburger input:checked ~ ul {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.header-hamburger .header-menu {
+  background-color: gray;
+  height: 100vh;
+  left: 0;
+  opacity: .9;
+  position: fixed;
+  -webkit-transition: top 1s;
+  transition: top 1s;
+  top: -100vh;
+  width: 50vh;
+  z-index: 3;
+}
+
+.header-hamburger .header-menu ul li a {
+  text-decoration: none;
+  color: .232323;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.header-hamburger .header-menu.active {
+  top: 0;
+}
+
+.header-hamburger .header-menu.active ul {
+  margin-top: 4rem;
+}
+
+.header-hamburger .header-menu.active ul li {
+  padding: 1rem;
+  text-align: center;
+}
+
+.header-hamburger .header-menu.active ul li a {
+  color: white;
+  font-size: 2rem;
+}
+
+.header-hamburger .header-menu.active ul li a:hover {
+  color: #664e00;
+}
+/*# sourceMappingURL=hamburger.css.map */

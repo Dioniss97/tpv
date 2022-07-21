@@ -1,0 +1,29 @@
+.iva-admin header .header-title {
+  background-color: #dbdfe1;
+  border-radius: 2px;
+  width: 86%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.iva-admin header .header-title h1, .iva-admin header .header-title h3 {
+  color: #333;
+  text-align: center;
+}
+
+.iva-admin header .header-title h3 {
+  font-size: 1.4em;
+  font-weight: lighter;
+  margin-bottom: .4rem;
+}
+
+.iva-admin header .header-title h1 {
+  font-size: 3.2em;
+  font-weight: lighter;
+}
+
+.iva-admin main {
+  width: 86%;
+  margin: auto;
+}
+/*# sourceMappingURL=iva-admin.css.map */

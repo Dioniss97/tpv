@@ -12,6 +12,41 @@
 </head>
 
 <body>
+    <div class="charge-window-container">
+        <div class="window-contents">
+            <div class="title">
+                <h3>Cobrar ticket</h3>
+            </div>
+            <div class="buttons-container charge">
+                <div class="payment-buttons">
+                    <button class="cash-button">efectivo</button>
+                    <button class="card-button">tarjeta</button>
+                    <button class="bizum-button">bizum</button>
+                </div>
+                <div class="cancel-button">
+                    <button class="button-text accept">CERRAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="destroy-window-container">
+        <div class="window-contents">
+            <div class="title">
+                <h3>Eliminar ticket</h3>
+            </div>
+            <div class="text">
+                <p>Está a punto de borrar el pedido sin ser cobrado. ¿Está completamente seguro de realizar esta acción?</p>
+            </div>
+            <div class="buttons-container destroy">
+                <div class="button">
+                    <button class="button-text denie">CERRAR</button>
+                </div>
+                <div class="button">
+                    <button class="button-text accept">ELIMINAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="title-container">
             <h1>TPV</h1>
@@ -106,15 +141,15 @@
                             </div>
                         </div>
                         <div class="ticket-buttons">
-                            <button class="button-add-product">Eliminar</button>
-                            <button class="button-print">Cobrar</button>
+                            <button class="destroy-button">Eliminar</button>
+                            <button class="charge-button">Cobrar</button>
                         </div>
                     </div>
                 </div>
                 <div class="column-main">
                     <div class="categories-main-content">
                         <div class="categories-title">
-                            <h3>Productos</h3>
+                            <h3>CATEGORÍAS</h3>
                         </div>
                         <div class="categories">
                             <div class="categories-buttons">
@@ -134,51 +169,19 @@
                                         <span>Categorías</span>
                                     </button>
                                 </div>
-                                <div class="products-button">
-                                    <button>
-                                        <svg viewBox="0 0 24 24">
-                                            <path fill="currentColor" d="M12 16C13.1 16 14 16.9 14 18S13.1 20 12 20 10 19.1 10 18 10.9 16 12 16M12 4C13.1 4 14 4.9 14 6S13.1 8 12 8 10 7.1 10 6 10.9 4 12 4M6 16C7.1 16 8 16.9 8 18S7.1 20 6 20 4 19.1 4 18 4.9 16 6 16M6 10C7.1 10 8 10.9 8 12S7.1 14 6 14 4 13.1 4 12 4.9 10 6 10M6 4C7.1 4 8 4.9 8 6S7.1 8 6 8 4 7.1 4 6 4.9 4 6 4M18 16C19.1 16 20 16.9 20 18S19.1 20 18 20 16 19.1 16 18 16.9 16 18 16M18 10C19.1 10 20 10.9 20 12S19.1 14 18 14 16 13.1 16 12 16.9 10 18 10M18 4C19.1 4 20 4.9 20 6S19.1 8 18 8 16 7.1 16 6 16.9 4 18 4Z" />
-                                        </svg>
-                                        <span>Tapas</span>
-                                    </button>
-                                </div>
                             </div>
-                            <div class="element-container">
-                                <div class="element">
-                                    <div class="element-img">
-                                        <img src="img/productos/variado.webp" alt="">
+                            <div class="categories-container">
+                                <div class="category">
+                                    <div class="category-img">
+                                        <img src="img/tapas.webp" alt="">
                                     </div>
-                                    <div class="element-title">Variado</div>
+                                    <div class="category-title">Variado</div>
                                 </div>
-                                <div class="element">
-                                    <div class="element-img">
-                                        <img src="img/productos/ensaladilla.webp" alt="">
+                                <div class="category">
+                                    <div class="category-img">
+                                        <img src="img/drinks.webp" alt="">
                                     </div>
-                                    <div class="element-title">Ensaladilla</div>
-                                </div>
-                                <div class="element">
-                                    <div class="element-img">
-                                        <img src="img/productos/albondigas.png" alt="">
-                                    </div>
-                                    <div class="element-title">Albondigas</div>
-                                </div>
-                                <div class="element">
-                                    <div class="element-img">
-                                        <img src="img/productos/calamares-romana.png" alt="">
-                                    </div>
-                                    <div class="element-title">Calamares a la romana</div>
-                                </div>
-                                <div class="element">
-                                    <div class="element-img">
-                                        <img src="img/productos/carne-salsa.png" alt="">
-                                    </div>
-                                    <div class="element-title">Carne en salsa</div>
-                                </div>
-                                <div class="element">
-                                    <div class="element-img">
-                                        <img src="img/productos/callos.png" alt="">
-                                    </div>
-                                    <div class="element-title">Callos</div>
+                                    <div class="category-title">Tapas</div>
                                 </div>
                             </div>
                         </div>
@@ -187,6 +190,7 @@
             </div>
         </div>
     </main>
+    <script type="module" src="main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,113 @@
+.destroy-window-container, .charge-window-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.destroy-window-container.active, .charge-window-container.active {
+  opacity: 1;
+  z-index: 3;
+}
+
+.destroy-window-container .window-contents, .charge-window-container .window-contents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: .6rem;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.destroy-window-container .window-contents .title, .charge-window-container .window-contents .title {
+  border-bottom: .1rem solid #ccc;
+  height: 25%;
+  margin-bottom: 1rem;
+}
+
+.destroy-window-container .window-contents .title h3, .charge-window-container .window-contents .title h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.destroy-window-container .window-contents .text, .charge-window-container .window-contents .text {
+  font-size: 1.2rem;
+  margin: 2rem auto 3rem auto;
+  width: 80%;
+}
+
+.destroy-window-container .window-contents .buttons-container.destroy, .charge-window-container .window-contents .buttons-container.destroy {
+  border-top: .1rem solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.destroy-window-container .window-contents .buttons-container .cancel-button, .charge-window-container .window-contents .buttons-container .cancel-button {
+  border-top: .1rem solid #ccc;
+  margin-top: 1rem;
+  width: 100%;
+  height: 25%;
+}
+
+.destroy-window-container .window-contents .buttons-container .cancel-button button, .charge-window-container .window-contents .buttons-container .cancel-button button {
+  width: 20%;
+  margin-left: 80%;
+}
+
+.destroy-window-container .window-contents .buttons-container .payment-buttons, .destroy-window-container .window-contents .buttons-container text, .charge-window-container .window-contents .buttons-container .payment-buttons, .charge-window-container .window-contents .buttons-container text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.destroy-window-container .window-contents .buttons-container .payment-buttons button, .destroy-window-container .window-contents .buttons-container text button, .charge-window-container .window-contents .buttons-container .payment-buttons button, .charge-window-container .window-contents .buttons-container text button {
+  margin: .6rem;
+  background-color: blue;
+  color: white;
+  width: 60%;
+}
+
+.destroy-window-container .window-contents .buttons-container button, .charge-window-container .window-contents .buttons-container button {
+  border-radius: .2rem;
+  background: none;
+  margin-left: 10px;
+  font-weight: bold;
+  padding: .2rem .5rem;
+}
+
+.destroy-window-container .window-contents .buttons-container button:hover, .charge-window-container .window-contents .buttons-container button:hover {
+  background-color: white;
+  border-radius: .6rem;
+  color: #4d4d4d;
+  cursor: pointer;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+/*# sourceMappingURL=modal-window.css.map */

@@ -1,0 +1,38 @@
+.iva-admin {
+
+    header {
+
+        .header-hamburger {
+            
+        }
+
+        .header-title {
+            background-color: hsl(200, 9%, 87%);
+            border-radius: 2px;
+            width: 86%;
+            margin: auto;
+            padding: 1rem;
+
+            h1, h3 {
+                color: #333;
+                text-align: center;
+            }
+    
+            h3 {
+                font-size: 1.4em;
+                font-weight: lighter;
+                margin-bottom: .4rem;
+            }
+    
+            h1 {
+                font-size: 3.2em;
+                font-weight: lighter;
+            }
+        }
+    }
+
+    main {
+        width: 86%;
+        margin: auto;
+    }
+}

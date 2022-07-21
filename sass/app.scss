@@ -7,11 +7,14 @@
 @import "layout/_columns";
 
 // pages
-@import "pages/mesas/mesas";
-@import "pages/categorias/categorias";
-@import "pages/productos/productos";
-@import "pages/ventas/ventas";
-
+@import "pages/index/index";
+@import "pages/categories/categories";
+@import "pages/products/products";
+@import "pages/sells/sells";
+@import "pages/iva-admin/iva-admin";
+  
 // components
 @import "components/products-list";
 @import "components/ticket-display";
+@import "components/modal-window";
+@import "components/hamburger";
