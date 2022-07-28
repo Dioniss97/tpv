@@ -461,6 +461,10 @@ ol, ul {
   width: 100%;
 }
 
+main {
+  margin: 0 2rem 0 2rem;
+}
+
 @font-face {
   font-family: 'Abel';
   src: url("../fonts/Abel-Regular.ttf");
